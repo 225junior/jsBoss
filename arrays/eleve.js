@@ -1,8 +1,6 @@
-export class test {
+class eleve {
 
-eleves = [];
-
-this.eleves =
+eleve =
 [
     {
         Nom:"Yao jean",
@@ -36,5 +34,5 @@ this.eleves =
         Nom:"Guessan Paul",
         age:13
     },
-]
+];
 }
