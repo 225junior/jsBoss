@@ -1,6 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
 const x = function(){
 
 }
+
 
 const y = class {
 
@@ -18,6 +33,11 @@ class Hero
         this.name = name;
         this.level = level;
     }
+
+    greet()
+    {
+        return 'bonjour';
+    }
 }
 
 
@@ -28,3 +48,8 @@ const constructeurFromClass = new y()
 console.log(constructeurFromFunction)
 console.log(constructeurFromClass)
 console.log(Object.getPrototypeOf(y));
+
+
+    </script>
+</body>
+</html>

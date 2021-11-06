@@ -1,3 +1,4 @@
+import { test } from "./eleve";
 const tab = [1,2,3,4];
 
 console.log(tab.reduce((prev,next)=>prev+next))
