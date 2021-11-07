@@ -15,4 +15,3 @@ tabCopy  = c.concat();
 index = tabCopy.push(14)
 
 console.log(tabCopy)
-
