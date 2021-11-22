@@ -34,7 +34,22 @@ eleve =
     },
 ];
 
-a = [1,2,3,4,5,6,7]
 
-console.log(eleve.filter((age) => age>10 ))
-console.log(a.filter((n) => n>3 ))
+t = ["Kouamé Fulgence","Guessan Paul"]
+// a = [1,2,3,4,5,6,7]
+arr = [];
+console.log(eleve.filter((e) => e.Nom.includes('Bog')));
+
+
+
+
+
+for (let index = 0; index < t.length; index++) {
+    
+    arr.push(eleve.filter((e) => e.Nom == t[index] ));
+}
+
+// console.log("Sans Flat",arr);
+// console.log("Avec Flat",arr.flat());
+
+// console.log(a.filter((n) => n>3 ))
