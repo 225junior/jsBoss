@@ -101,16 +101,17 @@ const user = [
   const sortByPosition = obj => {
     const order = [], res = {};
     Object.keys(obj).forEach(key => {
-       return order[obj[key]['AccessLevel'] - 1] = key;
+       return order[obj[key]['ID'] - 0] = key;
     });
     order.forEach(key => {
        res[key] = user[key];
     });
     return res;
  }
- 
- console.log(sortByPosition(obj));
-const tt = user.filter((utilisateur) => utilisateur.FullName.toLowerCase()
-.includes(str.toLowerCase()));
 
-console.log(tt)
+ console.log(sortByPosition(user));
+
+// const tt = user.filter((utilisateur) => utilisateur.FullName.toLowerCase()
+// .includes(str.toLowerCase()));
+
+// console.log(tt)
