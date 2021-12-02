@@ -11,8 +11,3 @@ sorted = array.sort((a, b) => {
 })
 
 console.log('Ordre Croissant:',sorted)
-
-
-
-
-
