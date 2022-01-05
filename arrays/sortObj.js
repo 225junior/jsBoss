@@ -1,3 +1,7 @@
+/**
+ * Ranger les objets dans l'ordre soit croissant soit decroissant selon la propriété choisie soit la date soit autre
+ */
+
 Items = [{
       "ID": 95,
       "Subject": "• Yamoussoukro • Zouan-Hounien",

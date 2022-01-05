@@ -1,3 +1,7 @@
+/**
+ * Ranger le tableau dans l'ordre soit croissant soit decroissant
+ */
+
 const array = [ -1, 6, 4, 9, 3 ]
 
 // ordre decroissant
