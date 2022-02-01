@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var max = new Date("Jan 1, 2000 10:10:00").getTime();
+var min = new Date("Jan 1, 2000 10:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  max = max - 1000
+  console.log(max--)
+
+  // Find the distance between now and the count down date
+  var distance = max - min;
+
+  // Time calculations for minutes and seconds
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Le code á expiré";
+  }
+}, 1000);
+</script>
+</body>
+</html>
